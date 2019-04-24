@@ -7,7 +7,7 @@ console.log('%c Browser Type ', 'background: blue; color: #bada55', result.brows
 console.log('%c Mobile Type ', 'background: red; color: #bada55', result.device);
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', function () {
-    navigator.serviceWorker.register('../sw_cached_pages.js').then(function (reg) {
+    navigator.serviceWorker.register('/../sw_cached_pages.js').then(function (reg) {
       console.log('sw reg')
       return console.log('Service Worker: Registered (Pages)');
     }).catch(function (err) {
